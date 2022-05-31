@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/Playstation_Img/logo.png" alt="" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li href=""><a href="">menu 1</a></li>
+                    <li href=""><a href="">menu 2</a></li>
+                    <li href=""><a href="">menu 3</a></li>
+                    <li href=""><a href="">others</a></li>
+                </ul>
+            </nav>
+            <img src="img/Playstation_Img/menu.png" alt="" class="menu-logo" onclick="toggleMenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 <br> Dualshock 4</h2>
+                <h3>Wireless Controller for PlayStation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$43.60</h4>
+                <button type="button">Buy Now <img src="img/Playstation_Img/arrow.png" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="img/Playstation_Img/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-item">
+                    <img src="img/Playstation_Img/add.png">
+                    <p><small> Add to Cart</small></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="img/Playstation_Img/fb.png" alt="">
+            <img src="img/Playstation_Img/ig.png" alt="">
+            <img src="img/Playstation_Img/tw.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById('menuList');
+
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight == "130px";
+            }
+            else
+            {
+                menuList.style.maxHeight == "0px";
+
+            }
+        }
+
+    </script>
+</body>
+</html>
